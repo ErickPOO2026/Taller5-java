@@ -1,8 +1,8 @@
 package taller5;
 
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  * Ejercicio 2 - Promedio de tres notas (BufferedReader)
@@ -16,22 +16,28 @@ import java.io.IOException;
 public class Ejercicio2 {
 
     public static double calcularPromedio(double n1, double n2, double n3) {
-        // TODO: retornar (n1 + n2 + n3) / 3.0
-        return 0.0;
+        return (n1 + n2 + n3) / 3.0;
     }
 
     public static String obtenerEstado(double promedio) {
-        // TODO: retornar "APROBADO" si promedio >= 70, si no "REPROBADO"
-        return "";
+        if (promedio >= 70) {
+            return "APROBADO";
+        } else {
+            return "REPROBADO";
+        }
     }
 
     public static void main(String[] args) throws IOException {
-        // TODO:
-        // 1. Crear BufferedReader sobre System.in
-        // 2. Leer las tres notas con br.readLine()
-        // 3. Convertir con Double.parseDouble
-        // 4. Mostrar con System.out.printf EXACTO:
-        //      Promedio: X.XX
-        //      Estado: APROBADO   (o REPROBADO)
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        double n1 = Double.parseDouble(br.readLine());
+        double n2 = Double.parseDouble(br.readLine());
+        double n3 = Double.parseDouble(br.readLine());
+
+        double promedio = calcularPromedio(n1, n2, n3);
+        String estado = obtenerEstado(promedio);
+
+        System.out.printf("Promedio: %.2f%n", promedio);
+        System.out.printf("Estado: %s%n", estado);
     }
 }
