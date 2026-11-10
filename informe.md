@@ -1,10 +1,10 @@
 # Informe — Taller #5 Programación 1
 
-**Nombre completo:** [Erick Yasid Santamaría Barría]
-**Cédula:** [8-1067-91]
-**Semilla (últimos 3 dígitos):** [791]
-**Rama de trabajo:** lab10-[Santamaría]-[Erick]
-**Fecha:** [2026-11-9]
+**Nombre completo:** Erick Yasid Santamaría Barría
+**Cédula:** 8-1067-91
+**Semilla (últimos 3 dígitos):** 791
+**Rama de trabajo:** lab10-Santamaría-Erick
+**Fecha:** 2026-11-9
 
 ## Reflexión breve (máximo 5 líneas)
 
