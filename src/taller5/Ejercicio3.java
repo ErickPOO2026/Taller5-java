@@ -12,20 +12,24 @@ import javax.swing.JOptionPane;
 public class Ejercicio3 {
 
     public static double calcularArea(double base, double altura) {
-        // TODO: retornar base * altura
-        return 0.0;
+        return base * altura;
     }
 
     public static double calcularPerimetro(double base, double altura) {
-        // TODO: retornar 2 * (base + altura)
-        return 0.0;
+        return 2 * (base + altura);
     }
 
     public static void main(String[] args) {
-        // TODO:
-        // 1. Pedir base y altura con JOptionPane.showInputDialog
-        // 2. Mostrar con JOptionPane.showMessageDialog EXACTO:
-        //      Área: X.XX
-        //      Perímetro: Y.YY
+        String textoBase = JOptionPane.showInputDialog("Ingrese la base del rectángulo:");
+        String textoAltura = JOptionPane.showInputDialog("Ingrese la altura del rectángulo:");
+
+        double base = Double.parseDouble(textoBase);
+        double altura = Double.parseDouble(textoAltura);
+
+        double area = calcularArea(base, altura);
+        double perimetro = calcularPerimetro(base, altura);
+
+        String resultado = String.format("Área: %.2f\nPerímetro: %.2f", area, perimetro);
+        JOptionPane.showMessageDialog(null, resultado);
     }
 }
